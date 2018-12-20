@@ -19,8 +19,8 @@
           dataType: 'json',
           data: token
         }).done(function(data) {
-           var  temp=JSON.stringify(data);
-            console.log(temp);
+           var  temp=JSON.parse(data);
+            console.log(data);
             document.getElementById("dd1").innerHTML=JSON.stringify(temp);
            
           });
