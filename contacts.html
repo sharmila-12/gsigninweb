@@ -18,10 +18,11 @@
           url: 'https://www.google.com/m8/feeds/contacts/default/full?alt=json',
           dataType: 'json',
           data: token
-        }).done(function(data) {
-           var  temp=JSON.parse(data);
-            console.log(data);
-            document.getElementById("dd1").innerHTML=JSON.stringify(temp);
+        }).done(function(data){
+                console.log(data);
+           //var  temp=JSON.parse(data);
+           // console.log(temp);
+            document.getElementById("dd1").innerHTML=data;
            
           });
       }
